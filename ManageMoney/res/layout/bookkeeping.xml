@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+     >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ydg_top_bg"
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativeLayout01"
+        >
+        <!--返回  -->
+       <Button 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/back"
+           android:layout_marginLeft="2dp"
+           android:layout_gravity="center_vertical"
+           android:layout_alignParentLeft="true"
+           android:background="#00000000"
+           android:id="@+id/back1"
+           />
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:text="@string/addnewaccount"
+           android:textColor="@color/white"
+           android:textStyle="bold"
+           android:layout_centerInParent="true"
+           android:textSize="18sp"
+           /> 
+    </RelativeLayout>
+    <!-- 金额 -->
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_below="@+id/relativeLayout01"
+    android:gravity="center_vertical"
+    android:id="@+id/LinearLayout01"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jine"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        />
+    <EditText 
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/money"
+        android:background="@android:drawable/edit_text"
+        />
+</LinearLayout>
+<!--收支  -->
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/LinearLayout01"
+    android:gravity="center_vertical"
+    android:id="@+id/LinearLayout02"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shouzhi"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        />
+    <Spinner 
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/spinner1"
+        android:entries="@array/inoutspinner"
+        />
+</LinearLayout>
+<!--科目  -->
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/LinearLayout02"
+    android:gravity="center_vertical"
+    android:id="@+id/LinearLayout03"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kemu"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        />
+    <Spinner 
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/spinner2"
+        />
+</LinearLayout>
+<!-- 日期 -->
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/LinearLayout03"
+    android:gravity="center_vertical"
+    android:id="@+id/LinearLayout04"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        />
+    <TextView 
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/datepicker1"
+        android:textColor="@color/gray"
+        android:background="@drawable/income0"
+        android:gravity="center_vertical"
+        android:text=""
+        />
+</LinearLayout>
+
+<!--方式  -->
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/LinearLayout04"
+    android:gravity="center_vertical"
+    android:id="@+id/LinearLayout05"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/model"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        />
+    <Spinner 
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/spinner3"
+        />
+</LinearLayout>
+
+<!--地点 -->
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/LinearLayout05"
+    android:gravity="center_vertical"
+    android:id="@+id/LinearLayout06"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        />
+    <EditText 
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/place"
+        android:background="@android:drawable/edit_text"
+        />
+</LinearLayout>
+<!-- 备注 -->
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/LinearLayout06"
+    android:gravity="center_vertical"
+    android:id="@+id/LinearLayout07"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remark"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        />
+    <EditText 
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/remark"
+        android:background="@android:drawable/edit_text"
+        />
+</LinearLayout>
+<!--保存，再记一笔  -->
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/LinearLayout07"
+    android:gravity="center_vertical"
+    >
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/save"
+        android:text="@string/save"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#00000000"
+        />
+    <!-- android:background="@drawable/ydg_bottom_normal_btn_bg" -->
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#00000000"
+        android:text="@string/readd"
+        android:id="@+id/readd"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+    <!--android:background="@drawable/ydg_top_normal_btn_bg2"  -->
+</LinearLayout>
+</RelativeLayout>

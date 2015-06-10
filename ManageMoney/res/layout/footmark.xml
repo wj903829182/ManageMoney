@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tx_top_bg" >
+
+        <Button
+            android:id="@+id/footback"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/zj_btn_back" >
+        </Button>
+
+        <TextView
+            android:id="@+id/footmark"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/footback"
+            android:layout_toRightOf="@id/footback"
+            android:text="@string/footmark"
+            android:textColor="@color/white"
+            android:textSize="16sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/footmenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/zj_btn_menu" >
+        </Button>
+    </RelativeLayout>
+
+    <!-- 时间文本标签 -->
+
+    <TextView
+        android:id="@+id/footdate1"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:text="2015-05"
+        android:textColor="@color/gray" />
+
+    <!-- 地图和操作布局 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom" >
+
+        <!-- 地图组件 -->
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <!-- 下部操作栏 -->
+
+        <LinearLayout
+            android:id="@+id/foot_bottom_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:layout_marginTop="2dp"
+             >
+
+            <Button
+                android:id="@+id/bfootleft"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/myselector_zj_left"
+                android:text="" >
+            </Button>
+
+            <TextView
+                android:id="@+id/footdatemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="2015-05"
+                android:layout_marginRight="5dp"
+                 >
+            </TextView>
+
+            <Button
+                android:id="@+id/bfootright"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/myselector_zj_right"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/ball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:background="@color/white"
+                android:text="全部" >
+            </Button>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

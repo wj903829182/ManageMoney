@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 标题栏的布局 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ydg_top_bg" >
+
+        <Button
+            android:id="@+id/b_set_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ydg_back_btn_bg"
+            android:text="返回" >
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="90dp"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- 收入科目布局 -->
+
+    <LinearLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="260dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ydg_textarea" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ydg_icon_income" />
+
+        <Button
+            android:id="@+id/b_income_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:background="#00000000"
+            android:text="收入科目"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!-- 支出科目布局 -->
+
+    <LinearLayout
+        android:id="@+id/RelativeLayout03"
+        android:layout_width="260dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ydg_textarea" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ydg_icon_outlay" />
+
+        <Button
+            android:id="@+id/b_cost_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:background="#00000000"
+            android:text="支出科目"
+            android:textColor="@color/black"
+            android:textSize="18sp" >
+        </Button>
+    </LinearLayout>
+
+    <!-- 账户 -->
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ydg_textarea" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ydg_bank_book" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/b_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:background="#00000000"
+            android:text="账      户"
+            android:textColor="@color/black"
+            android:textSize="18sp" >
+        </Button>
+    </LinearLayout>
+<!-- 提醒设置 -->
+<LinearLayout
+  android:layout_width="260dp"
+  android:layout_height="35dp"
+  android:background="@drawable/ydg_textarea"
+  android:layout_marginTop="90dp">
+    <Button
+    android:id="@+id/b_remind_set"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="提醒设置"
+    android:background="#00000000"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="75dp"
+    >
+    </Button>
+  </LinearLayout>
+<!-- 关于 -->
+<LinearLayout
+  android:id="@+id/LinearLayout08"
+  android:layout_width="260dp"
+  android:layout_height="35dp"
+  android:background="@drawable/ydg_textarea"
+  android:layout_marginTop="20dp">
+    <Button
+    android:id="@+id/b_about_me"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="关      于"
+    android:background="#00000000"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="75dp"
+    >
+    </Button>
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ManageMoney</string>
+    <string name="action_settings">Settings</string>
+    <string name="back">返回</string>
+    <string name="addnewaccount">新增账务</string>
+    <string name="jine">金额</string>
+    <string name="shouzhi">收支</string>
+    <string name="kemu">科目</string>
+    <string name="date">日期</string>
+    <string name="model">方式</string>
+    <string name="place">地点</string>
+    <string name="remark">备注</string>
+    <string name="save">保存</string>
+    <string name="readd">再记一笔</string>
+    <string name="dalishouzhi">日常收支</string>
+    <string name="shourutj">收入统计</string>
+    <string name="zhichutj">支出统计</string>
+    <string name="choicesubject">选择统计类别 :</string>
+    <string name="t_subject">科目</string>
+    <string name="t_money">金额</string>
+    <string name="t_model">方式</string>
+    <string name="t_date">日期</string>
+    <string name="t_subject2">科目:</string>
+    <string name="t_money2">金额:</string>
+    <string name="t_model2">方式:</string>
+    <string name="t_date2">日期:</string>
+    <string name="account">账户</string>
+    <string name="show_report_forms">显示报表</string>
+    <string name="inputnum">你还可以输入100字</string>
+    <string name="voiceWarning">使用智能语音记账功能会产生网络流量, 请按住下方语音按钮使用本功能</string>
+    <string name="voiceBtnPressSpeak">请点击说话</string>
+    <string name="month_budget">月度预算</string>
+    <string name="budget_total">总预算</string>
+    <string name="footmark">足迹</string>
+    <string name="sthouse">房贷类</string>
+    <string name="fangdai">房贷类</string>
+    <string name="beforehuankuan">提前还款</string>
+    <string name="welcomecontent">欢迎您提出宝贵的意见和建议，
+          您留下的每个字都将用来改善我们的服务。</string>
+    <string name="inputadvice">请输入您的反馈意见(字数500字以内)</string>
+    
+    
+    
+    
+
+    <string-array name="inoutspinner">
+        <item>日常收入</item>
+        <item>日常支出</item>
+    </string-array>
+    <string-array name="sujectspinner1">
+        <item>职业收入</item>
+        <item>资产卖出</item>
+        <item>借贷收入</item>
+        <item>其他收入</item>
+    </string-array>
+    <string-array name="sujectspinner2">
+        <item>饮食</item>
+        <item>交通</item>
+        <item>日常用品</item>
+        <item>通讯</item>
+        <item>衣服</item>
+        <item>教育</item>
+    </string-array>
+    <string-array name="mode">
+        <item>我的现金</item>
+        <item>我的活期</item>
+        <item>信用卡</item>
+    </string-array>
+    <string-array name="StatisticIn">
+        <item>今日收入情况</item>
+        <item>本月收入情况</item>
+        <item>上月收入情况</item>
+        <item>前三个月收入情况</item>
+        <item>今年收入总情况</item>
+        <item>去年收入总情况</item>
+        <item>全部收入情况</item>
+    </string-array>
+    <string-array name="StatisticOut">
+        <item>今日支出情况</item>
+        <item>本月支出情况</item>
+        <item>上月支出情况</item>
+        <item>前三个月支出情况</item>
+        <item>今年支出总情况</item>
+        <item>去年支出总情况</item>
+        <item>全部支出情况</item>
+    </string-array>
+
+</resources>

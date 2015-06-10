@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical" >
+
+    <!-- 房贷类布局 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bhouse"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/touming"
+            android:gravity="center"
+            android:text="@string/sthouse" >
+        </Button>
+
+        <ImageView
+            android:id="@+id/img_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/img_house" >
+        </ImageView>
+    </RelativeLayout>
+    <!-- 设置水平分割线 -->
+
+    <ImageView
+        android:id="@+id/img_moji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/img_moji" />
+    
+    <!-- 房贷内容布局 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/fd"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/myselector"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="@string/fangdai" >
+        </Button>
+
+        <Button
+            android:id="@+id/tqhk"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/myselector"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/beforehuankuan" >
+        </Button>
+    </RelativeLayout>
+
+    <!--  银行类-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <Button
+            android:id="@+id/bbank"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/touming"
+            android:gravity="center"
+            android:text="@string/sthouse" >
+        </Button>
+
+        <ImageView
+            android:id="@+id/img_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/img_bank" >
+        </ImageView>
+    </RelativeLayout>
+    
+    <!-- 设置水平分割线 -->
+
+    <ImageView
+        android:id="@+id/img_moji2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/img_moji"
+        android:layout_marginTop="5dp"
+         />
+    <!-- 银行类内容布局 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/b_deposit"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/myselector"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="活期储蓄" >
+        </Button>
+
+        <Button
+            android:id="@+id/b_lingcunzhengqu"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/myselector"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="零存整取" >
+        </Button>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/b_lump"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/myselector"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="整存整取" >
+        </Button>
+
+        <Button
+            android:id="@+id/b_zero"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/myselector"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="整存零取" >
+        </Button>
+    </RelativeLayout>
+    
+    
+</LinearLayout>

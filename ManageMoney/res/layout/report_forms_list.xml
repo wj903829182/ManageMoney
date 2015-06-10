@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_list1" 
+    >
+    
+<!-- 对titlebar进行布局 -->
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bb_top_bg"  
+    >
+    <Button 
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="@string/back"
+        android:id="@+id/list_report_back"
+        android:background="@drawable/myselector_tx_back"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        >
+        <Button 
+		android:text="" 
+		android:id="@+id/day" 
+		android:layout_width="65dp" 
+		android:layout_height="40dp"
+		android:layout_gravity="center_vertical"
+		android:background="@drawable/bb_ydg_switch_day_off"
+		android:layout_marginLeft="5dp"
+		/>
+		<Button 
+		android:text="" 
+		android:id="@+id/week" 
+		android:layout_width="65dp" 
+		android:layout_height="40dp"
+		android:layout_gravity="center_vertical"
+		android:background="@drawable/bb_ydg_switch_week_off"
+		android:layout_marginLeft="3dp"
+		/>
+		<Button 
+		android:text="" 
+		android:id="@+id/month" 
+		android:layout_width="65dp" 
+		android:layout_height="40dp"
+		android:layout_gravity="center_vertical"
+		android:background="@drawable/bb_ydg_switch_month_off"
+		android:layout_marginLeft="3dp"
+		/>
+    </LinearLayout>
+    
+</RelativeLayout> 
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bb_ydg_list_bg"
+    android:layout_marginTop="2dp"
+    >
+    <Button 
+  			android:text="" 
+  			android:id="@+id/bleft" 
+  			android:layout_width="40dp" 
+  			android:layout_height="40dp"
+  			android:layout_marginLeft="10dp"
+  			android:layout_marginTop="5dp"
+  			android:background="@drawable/myselector_list_left"
+  			android:layout_alignParentLeft="true"
+  			>
+  		</Button>
+		<TextView 
+			android:text="" 
+			android:id="@+id/dateTextView1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="40dp"
+			android:layout_marginTop="5dp"
+			android:gravity="center"
+			android:layout_centerInParent="true"
+			android:textColor="@color/white"
+			android:textSize="14sp"
+			>
+		</TextView>
+		<Button 
+			android:text="" 
+			android:id="@+id/bright" 
+			android:layout_width="40dp" 
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+  			android:layout_marginTop="5dp"
+  			android:background="@drawable/myselector_list_right"
+  			android:layout_marginRight="10dp"
+			>
+		</Button>
+</RelativeLayout>
+
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    >
+   <!-- 列表项布局 -->
+   <ListView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/report_listview"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="2dp"
+    >   
+  </ListView>
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_alignParentBottom="true"
+       >
+    <Button 
+  		android:text="" 
+  		android:id="@+id/list_accout" 
+  		android:layout_width="65dp" 
+  		android:layout_height="40dp"
+  		android:layout_gravity="center_vertical"
+  		android:background="@drawable/bb_ydg_zhanghu_off"
+  		/>
+  	
+	<Button 
+		android:text=""
+		android:id="@+id/list_subject" 
+		android:layout_width="65dp" 
+		android:layout_height="40dp"
+		android:layout_gravity="center_vertical"
+		android:background="@drawable/bb_ydg_kemu_on"
+		android:layout_marginLeft="5dp"
+		/>
+	</LinearLayout>
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_main"
+    android:layout_marginBottom="0dp"
+    android:layout_marginTop="0dp"
+     >
+     <!-- android:background="@drawable/back" -->
+     <!--标题图片  -->
+<ImageView 
+    android:id="@+id/imageTitle1"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/maintitle"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    android:paddingBottom="0dp"
+    />
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageTitle1"
+    android:id="@+id/liearLay1"
+    android:layout_marginTop="10dp"
+    android:paddingTop="0dp"
+    android:gravity="center_horizontal"
+    >
+    <!--计账  -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageJizhang"
+        android:src="@drawable/jizhang"
+        android:background="#00000000"
+        />
+    <!--日常收支  -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageShouzhi"
+        android:src="@drawable/shouzhi"
+        android:background="#00000000"
+        android:layout_marginLeft="9dp"
+        />
+    <!--报表  -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageBaobiao"
+        android:src="@drawable/baobiao"
+        android:background="#00000000"
+        android:layout_marginLeft="9dp"
+        />
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/liearLay1"
+    android:id="@+id/liearLay2"
+    android:layout_marginTop="25dp"
+    android:gravity="center_horizontal"
+    >
+    <!-- 语音 -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageYuyin"
+        android:src="@drawable/yuyin"
+        android:background="#00000000"
+        />
+    <!-- 预算 -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageYusuan"
+        android:src="@drawable/yusuan"
+        android:background="#00000000"
+        android:layout_marginLeft="9dp"
+        />
+    <!-- 足迹 -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageZuji"
+        android:src="@drawable/zuji"
+        android:background="#00000000"
+        android:layout_marginLeft="9dp"
+        />
+</LinearLayout>
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/liearLay2"
+    android:id="@+id/liearLay3"
+    android:layout_marginTop="25dp"
+    android:gravity="center_horizontal"
+    >
+    <!-- 计算器 -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageJisuan"
+        android:src="@drawable/jisuan"
+        android:background="#00000000"
+        />
+    <!-- 提醒 -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageTixing"
+        android:src="@drawable/tixing"
+        android:background="#00000000"
+        android:layout_marginLeft="9dp"
+        />
+    <!-- 设置 -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageSet"
+        android:src="@drawable/shezhi"
+        android:background="#00000000"
+        android:layout_marginLeft="9dp"
+        />
+</LinearLayout>
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/liearLay3"
+    android:id="@+id/liearLay4"
+    android:layout_marginTop="25dp"
+    >
+    <!-- 建议反馈 -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageJianyi"
+        android:src="@drawable/jianyi"
+        android:background="#00000000"
+        android:layout_marginLeft="38dp"
+        />
+    <!-- 退出 -->
+    <ImageButton 
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageTuichu"
+        android:src="@drawable/tuichu"
+        android:background="#00000000"
+        android:layout_marginLeft="9dp"
+        />
+</LinearLayout>
+
+
+</RelativeLayout>

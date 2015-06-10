@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ydg_top_bg" >
+
+        <Button
+            android:id="@+id/b_remind_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ydg_back_btn_bg"
+            android:text="返回" >
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="55dp"
+            android:text="添加提醒"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/b_remind_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/myselectora"
+            android:text="保存" >
+        </Button>
+    </LinearLayout>
+
+    <!-- 设置时间 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="设置时间"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" >
+    </TextView>
+    <!-- 日期选择器 -->
+
+    <DatePicker
+        android:id="@+id/remind_datepicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible" >
+    </DatePicker>
+    <!-- 布局更新时间和更新频率 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal" >
+
+        <!-- 更新时间 -->
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_box_border"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/clock_icon_gray" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/t_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="08:00"
+                android:textColor="@color/black"
+                android:textSize="14sp" >
+            </TextView>
+        </LinearLayout>
+        <!-- 更新频率 -->
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/general_box_border"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/repeat_icon" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/t_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="每月"
+                android:textColor="@color/black"
+                android:textSize="14sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 布局提醒标题和内容 -->
+    <!-- 提醒标题 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/white_shadow_box_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="16dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/t_rimind_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="交房租"
+            android:textSize="18sp" >
+        </TextView>
+    </LinearLayout>
+    
+    <!-- 提醒内容 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/white_shadow_box_bg" 
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dp"
+            android:text="备注"
+            android:textColor="@color/black"
+            android:textSize="18sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="220dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/edit_text"
+             >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

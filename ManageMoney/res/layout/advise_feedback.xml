@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical" >
+
+    <!-- 提示标题 -->
+
+    <TextView
+        android:id="@+id/userfeedback"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="用户反馈"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+   
+    <!--  -->
+
+    <TextView
+        android:id="@+id/welcomecontent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/welcomecontent"
+        android:textColor="@color/black"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+         />
+ <!-- 反馈内容 -->
+    <EditText 
+		android:text="" 
+		android:id="@+id/edit_feedback" 
+		android:layout_width="300dp" 
+		android:layout_height="260dp"
+		android:layout_marginLeft="10dp"
+		android:gravity="top"
+		android:hint="@string/inputadvice"
+		android:background="@android:drawable/edit_text"
+		android:layout_gravity="center"
+		android:layout_marginTop="2dp"
+		/>
+    <Button 
+		android:text="提交反馈" 
+		android:id="@+id/submit" 
+		android:layout_width="290dp" 
+		android:layout_height="50dp"
+		android:layout_marginTop="15dp"
+		android:textSize="18sp"
+		android:layout_gravity="center"
+		>
+	</Button>
+	<Button 
+		android:text="取消" 
+		android:id="@+id/bcancel" 
+		android:layout_width="290dp" 
+		android:layout_height="50dp"
+		android:layout_marginTop="15dp"
+		android:textSize="18sp"
+		android:layout_gravity="center"
+		>
+	</Button>
+    
+
+</LinearLayout>
